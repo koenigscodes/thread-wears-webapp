@@ -10,7 +10,7 @@ const CartIcon = () => {
   const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
   
   const changeIsCartOpen = () => setIsCartOpen(!isCartOpen);
-  console.log({cartCount});
+
   return (
     <div className='cart-icon-container' onClick={changeIsCartOpen}>
       <CartLogo className='shopping-icon' />
